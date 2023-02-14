@@ -262,4 +262,4 @@ This project is licensed under the GNU GENERAL PUBLIC license. Please see the
 
 ## Exhibit
 
-The work was first presented in [Sankt interface 2022](http://interface.ufg.ac.at/blog/sankt-interface-2/) event.
+The work was first presented in [Sankt Interface 2022](http://interface.ufg.ac.at/blog/sankt-interface-2/) event in Linz, Austria.
