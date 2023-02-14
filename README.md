@@ -174,6 +174,33 @@ The `mousePressed()` function is recalled whenever one of these conditions is tr
 - `if mouseButton == LEFT` : the selected letter is going to be added to the `textArr` array and therefore printed on screen.
 - `elif mouseButton == RIGHT` : the last printed letter is going to be cancelled from the `textArr` array and therefore is going to be cancelled from the screen.
 
+```python
+def mousePressed():
+    global textArr, letterArr, currSel
+    if mouseButton == LEFT:
+        textArr.append(letterArr[currSel])
+    elif mouseButton == RIGHT:
+        if len(textArr)>0:
+            textArr.remove(textArr[len(textArr)-1])
+```
+
+### def mouseWheel(event)
+
+The `mouseWheel(event)` function selects through the scroll of the mouse wheel the letter to print in the `textArr`. The variable `currSel` picks up the letters from the `letterArr` array, which value cannot be greater than 39 or smaller than zero. This way, the selection cycles through the element of the `currSel` array.
+
+```python
+def mouseWheel(event):
+    global currSel, letterArr
+    if currSel>=0 and currSel<=len(letterArr)-1:
+        currSel+=event.getCount()
+        currSel= currSel % 39
+        if currSel<0:
+            currSel=0
+        if currSel>len(letterArr)-2:
+            currSel=len(letterArr)-1
+    print(currSel)
+```
+
 
 
 
