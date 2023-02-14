@@ -9,7 +9,11 @@ ________  ___       ________  _________        _________  ___       __   ___  __
                                                                                  \|_________|
 ```
 
-Processing (4.0.1) ==> text editor! :speaking_head: :computer: :page_facing_up: :paperclip: :memo: :grey_question:
+Processing (4.0.1) ==> text editor! :speaking_head: :computer: :memo:
+
+## Credit
+
+Plot twist is an original artwork by [Martina Pizzigoni](https://martypizzi98.wixsite.com/martina-pizzigoni), 2022 - 2023
 
 
 ## Usage
@@ -250,3 +254,12 @@ def keyPressed():
     or key == '-' or key == '=':
         posy-=10
 ```
+
+## License 
+
+This project is licensed under the GNU GENERAL PUBLIC license. Please see the
+[LICENSE](LICENSE) file for more details.
+
+## Exhibit
+
+The work was first presented in [Sankt interface 2022](http://interface.ufg.ac.at/blog/sankt-interface-2/) event.
