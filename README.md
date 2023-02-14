@@ -32,8 +32,8 @@ The code implements an inverted mouse and keyboard functionality, where the mous
 First of all, the code sets several variables such as like the `letterArr` array, which will store all the letter values, the `textArr`, which will then store the written text, the cursor selection `currSell` and the variables to space characters  `xAdd` and  `yAdd`. The last variabile which is set is the `fontSize`.
 
 ```python
-letterArr=["","a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y",
-"z", "?", "!", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
+letterArr=["","a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r",
+"s","t","u","v","w","x","y","z", "?", "!", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
 textArr=[]
 currSel=0;
 yAdd=0
@@ -84,7 +84,8 @@ def draw():
 After that, the global variables are recalled and the cancel and print buttons are also set. In this case, it will be possible to auto-save the page every time the `textArr` is deleted. Each time the cancel button is pressed, the `textArr` will be set back to zero. The button in the upper-left corner which is going to show the current letter selection is also set.
 
 ```python
-    global textArr, letterArr, currSel, xAdd, yAdd, fontSize, posx, posy, saveButtonX, saveButtonY, buttonRadius, gommina
+    global textArr, letterArr, currSel, xAdd, yAdd, fontSize, posx, posy, 
+    saveButtonX, saveButtonY, buttonRadius, gommina
     noCursor()
     
     global cancel
