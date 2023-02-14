@@ -81,7 +81,7 @@ def draw():
     imageMode(CORNER)
     image(window, 250, 150, width-500, height-250)
 ```
-After that, the global variables are recalled and the cancel and print buttons are also set. In this case, it will be possible to auto-save the page every time the textArr is deleted. Each time the cancel button is pressed, the textArr will be set back to zero.
+After that, the global variables are recalled and the cancel and print buttons are also set. In this case, it will be possible to auto-save the page every time the `textArr` is deleted. Each time the cancel button is pressed, the `textArr` will be set back to zero. The button in the upper-left corner which is going to show the current letter selection is also set.
 
 ```python
     global textArr, letterArr, currSel, xAdd, yAdd, fontSize, posx, posy, saveButtonX, saveButtonY, buttonRadius, gommina
@@ -99,6 +99,51 @@ After that, the global variables are recalled and the cancel and print buttons a
     # Draw the button wich show the current letter
     global currentsel
     currentsel=loadImage("Current selection.png")
- ```
+    
+    # Draw the button wich show the current letter
+    global currentsel
+    currentsel=loadImage("Current selection.png")
+```
+ 
+The text properties are set, and then the `textArr` is printed: each element of the array is printed individually. The function also includes a conditional statement to check if the text extends beyond the right edge of the screen, in which case it moves down and starts printing on a new line. 
+
+If the length of the text array is greater than the width of the text box, the function saves the current frame as a JPEG image and clears the text array. 
+
+```python
+    # Text propeperties
+    textAlign(CENTER)
+    textSize(fontSize)
+    font=loadFont("UnquietSpirits-48.vlw")
+    textFont(font)
+    
+        # Text print
+    fill(0)
+    if len(textArr)>0:
+        for x in range(len(textArr)):
+            if 315+xAdd>=width-300:
+                yAdd+=70
+                xAdd=0
+                print(xAdd)
+            text(textArr[x],xAdd+315,yAdd+290)
+            xAdd+=fontSize/1
+        if len(textArr)>362:
+            saveFrame("SANKT_interface_MP_####.jpg")
+            textArr=[]
+    xAdd=0
+    yAdd=0
+```
+The code also includes a section for displaying a current letter, which is stored in an array `currentsel`.
+
+```python
+    if keyPressed == True:
+        loop()
+        
+    # Display current letter
+    global currentsel
+    imageMode(CENTER)
+    image(currentsel, width-1450, 50, 200, 50)
+    textSize(30)
+    text(letterArr[currSel], width-1380, 60) # Show printed letter
+```
 
 
