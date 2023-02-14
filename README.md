@@ -208,7 +208,7 @@ The last part of the code provides the information for the `keyPressed()` functi
 
 The code first checks if the `key` variable is equal to `ENTER`. If it is, the code checks if the distance between the current position and a cancel button is less than a defined radius. If it is, the code saves the current frame and resets the `textArr` variable.
 
-The code then checks if a certain `keyCode` or key letter is pressed, and modifies the x and y positions of the cursor accordingly. 
+The code then checks if a certain `keyCode` or key letter is pressed, and modifies the `posx` and `posy` positions of the cursor accordingly. 
 
 ```python
 def keyPressed():
