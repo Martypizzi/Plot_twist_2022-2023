@@ -132,7 +132,7 @@ If the length of the text array is greater than the width of the text box, the f
     xAdd=0
     yAdd=0
 ```
-The code also includes a section for displaying a current letter, which is stored in an array `currentsel`.
+The code also includes a section for displaying a current letter, which is stored in an array `currentSel`.
 
 ```python
     if keyPressed == True:
@@ -144,6 +144,26 @@ The code also includes a section for displaying a current letter, which is store
     image(currentsel, width-1450, 50, 200, 50)
     textSize(30)
     text(letterArr[currSel], width-1380, 60) # Show printed letter
+``` 
+
+The last part of the `draw()` function aims to draw the custom cursor, controlled by the variables "posx" and "posy". The cursor's position is checked against the boundaries of the screen.
+
+The code also includes a conditional statement that checks if the `ENTER` key has been pressed while the cursor is on the Cancel button in the top right corner of the screen. If the condition is met, the background is refreshed and the `textArr` is cleared.
+
+```python
+    # Cursor
+    global puntatore
+    imageMode(CENTER)
+    image(puntatore, posx, posy, 36, 36)
+    if keyPressed and (key==ENTER):
+        isAtTopRight = (posx >= 460 and posy <= 80)
+        background(0)
+    if posx<0:
+        posx=0
+    if posy<0:
+        posy=0
+    if posx>width-12:
+        posx=width-12
+    if posy>height-12:
+        posy=height-12
 ```
-
-
