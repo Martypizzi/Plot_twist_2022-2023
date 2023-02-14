@@ -167,3 +167,14 @@ The code also includes a conditional statement that checks if the `ENTER` key ha
     if posy>height-12:
         posy=height-12
 ```
+
+### def mousePressed()
+
+The `mousePressed()` function is recalled whenever one of these conditions is true:
+- `if mouseButton == LEFT` : the selected letter is going to be added to the `textArr` array and therefore printed on screen.
+- `elif mouseButton == RIGHT` : the last printed letter is going to be cancelled from the `textArr` array and therefore is going to be cancelled from the screen.
+
+
+
+
+
