@@ -9,8 +9,7 @@ ________  ___       ________  _________        _________  ___       __   ___  __
                                                                                  \|_________|
 ```
 
-A Processing (4.0.1) text editor! :speaking_head: :computer: :page_facing_up: :paperclip: :memo: :grey_question:
-
+Processing (4.0.1) ==> text editor! :speaking_head: :computer: :page_facing_up: :paperclip: :memo: :grey_question:
 
 
 ## Usage
