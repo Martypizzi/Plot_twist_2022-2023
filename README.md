@@ -43,7 +43,7 @@ fontSize=30
 
 ### def setup()
 
-The code will first runs into the `setup` function by creating a full-screan canvas, a custom mouse cursor called `puntatore` and by creating the global variables for the save and delete button.
+The code will first runs into the `setup():` function by creating a full-screan canvas, a custom mouse cursor called `puntatore` and by creating the global variables for the save and delete button.
 
 ```python
 def setup():
@@ -67,7 +67,7 @@ def setup():
 
 ### def draw()
 
-The code then proceeds to create the background, which is drawn in the draw function so it can be refreshed. The background image is loaded, as well as the windows text box.
+The code then proceeds to create the background, which is drawn in the `draw():` function so it can be refreshed. The background image is loaded, as well as the windows text box.
 
 ```python
 def draw():
@@ -81,6 +81,24 @@ def draw():
     imageMode(CORNER)
     image(window, 250, 150, width-500, height-250)
 ```
-After that, also the cancel and print buttons are set. In this case, it will be possible to auto-save the page every time the textArr is deleted. Each time the cancel button is pressed, the textArr will be set back to zero.
+After that, the global variables are recalled and the cancel and print buttons are also set. In this case, it will be possible to auto-save the page every time the textArr is deleted. Each time the cancel button is pressed, the textArr will be set back to zero.
+
+```python
+    global textArr, letterArr, currSel, xAdd, yAdd, fontSize, posx, posy, saveButtonX, saveButtonY, buttonRadius, gommina
+    noCursor()
+    
+    global cancel
+    ellipseMode(RADIUS)
+    strokeWeight(2)
+    noStroke()
+    noFill()
+    circle(cancelButtonX, cancelButtonY, buttonRadius)
+    imageMode(CENTER)
+    image(cancel, cancelButtonX, cancelButtonY, 200, 50)
+    
+    # Draw the button wich show the current letter
+    global currentsel
+    currentsel=loadImage("Current selection.png")
+ ```
 
 
