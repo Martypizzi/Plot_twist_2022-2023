@@ -57,7 +57,8 @@ def setup():
     puntatore=loadImage("Puntatore.png")
     
     # Set globals for the save button
-    global buttonRadius, cancelButtonX, cancelButtonY, textButtonX, textButtonY, posx, posy, cancel, puntatore
+    global buttonRadius, cancelButtonX, cancelButtonY, textButtonX, textButtonY, posx, posy, 
+    cancel, puntatore
     posx, posy=0, 0
     buttonRadius=100
     cancelButtonX, cancelButtonY= width-150, 50
