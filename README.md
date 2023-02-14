@@ -203,6 +203,54 @@ def mouseWheel(event):
     print(currSel)
 ```
 
+### def keyPressed()
+
+The last part of the code provides the information for the `keyPressed()` function. It handles various key events, including arrow keys and certain letter keys.
+
+The code first checks if the `key` variable is equal to `ENTER`. If it is, the code checks if the distance between the current position and a cancel button is less than a defined radius. If it is, the code saves the current frame and resets the `textArr` variable.
+
+The code then checks if a certain `keyCode` or key letter is pressed, and modifies the x and y positions of the cursor accordingly. 
+
+```python
+def keyPressed():
+    global posx, posy, textArr
+    global font1, font2, font3, font4
+    if key==ENTER:
+        print("enter")
+        if dist(posx, posy, cancelButtonX, cancelButtonY) < buttonRadius:
+            saveFrame("SANKT_interface_MP_####.jpg")
+            textArr=[]
+    #DOWN keys
+    if keyCode==DOWN:
+        posy+=10
+    if key == 'g' or key == 'h' or key == 'j' or key == 'x' or key == 'c' or key == 'v' or key == 'b' or key == 'n' 
+    or key == 'm' or key == ',' or key == ' ' or key == '.' or key == 'z'  or key == '/':
+        posy+=10
+    #RIGHT keys
+    if keyCode==RIGHT:
+        posx+=10
+    if key == '[' or key == ']' or key == 'k' or key == 'l' or key == ';'  or key == "'" or key == '#' or key == '/' 
+    or key == '-' or key == '=' or key == '.':
+        posx+=10
+    if key==BACKSPACE:   
+        posx+=10
+        posy-=10
+        print("space")
+    #LEFT keys
+    if keyCode==LEFT:
+        posx-=10  
+    if key == '1' or key == '2' or key == 'q' or key == 'w' or key == 'a'  or key == 's' or key == 'd' or key == 'f' 
+    or key == '<' or key == 'z' or key == '`':
+        posx-=10
+    #UP keys
+    if keyCode==UP:
+        posy-=10
+    if key == '1' or key == '`' or key == 'o' or key == '2' or key == '3' or key == '4' or key == '5' or key == '6' 
+    or key == '7' or key == '8' or key == '9' or key == '0' or key == "ß" or key == '´´' or key == "e" or key == 'r'
+    or key == 't' or key == 'y' or key == 'u' or key == 'i' or key == 'p' or key == '-' or key == '=':
+        posy-=10
+```
+
 
 
 
