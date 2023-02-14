@@ -28,6 +28,47 @@ functioning.
 The code implements an inverted mouse and keyboard functionality, where the mouse is used to enter text and the keyboard to navigate with the cursor. The letter is selected by scrolling the mouse, and printed with the right mouse button and deleted with the left mouse button. The cursor position is operated via the keyboard, where keypresses correspond to the direction of the cursor.
 
 
+## Exhibit
+
+The work was first presented in [Sankt Interface 2022](http://interface.ufg.ac.at/blog/sankt-interface-2/) event in Linz, Austria.
+
+```
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@HbHHHHmm%kkkkkkk;;;!!|||||``     ;                    
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@HHHHHHHmm%kkkkkk%*"`           '  !                   ,
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@HHHHHHHmmm%H*["`                   =    ,,,~~;rr*"*^""`,
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@HHHHHmmmmk@"`                      ""``     rr*''''''` 
+@@@@@@U [kk*"MM&&&&&&&&&&&&&@@@@@@@@@@@@@@@@HHHHHmmm%kjr                                            
+@@@@@@U [[    `"**UmFRR&$$&&&&&&@@@@@@@@@@@@HHHH%mmmm[[[ ]k,.,                                      
+@@@@@@  [[  ''=*"jkmm;,""MHH%M8&&@@@@@@@@@@@HHHHmmmmmm%mk%kjkkw                    ``````````       
+@@@@@@  [[ ,;'! `"**Hmmkk,|Um;,`"**k"j@@@@@@HHHmm%%%%kkkkkH*j]@@@@     ,tw                          
+@@@@@@  [[,,;,;]@@@@w,,,  `"**!*!;, jj@@@@HHb%%kkkkkkkkkkk", ;;@@@,  ]@G"@L                       ``
+@@@@@@` [[||j|j]kmmmmkmkkkmHHHm,,;|`jj@H@%NNM***^""```    a.!j]@@@@@@@H%@@       ' `````````````````
+@@@@@@  [[',j(m]m%%bmmmkkkkkkkk;;!'`j[                   KNwjjm%%H@H@%*%]r         `````````````````
+@HHH@@  [[jjrmk]m%%mmmmmmmmkkkk;!,' j[                     #!j%%H%%H%%@@@@pp,     `       ````````` 
+HHHHHH  [[|!jjk]kk%%mmmmmmmmkk;;!!  j[                      `'jj%%kjm]H@@@H@@m  ,.,,`               
+HHHHHH  [[!!{jk]kmmmmmmmm%mkkkk;!|| j[                       **'` ''jj%@@N%%kmmHHH@h,'jk~,''        
+HHbmH%  [[!'j{%]kkmmmmm%%kkkkk;!!`  j`                             !'jjj!{k%%mmmpm%%b@,|ll[@%       
+Hbb%%%  [[;`',j]kkkk%kkkkkkkj;!!|`' j`                              '|j;;lgggiijjj*jjjYj{kk%%kHmm   
+%m%kkk  [!`|;,!""""""""""""""""''   j`                               ,,pw]*%%%%%mkkkmm%ppppppm%Hb   
+mmkkkk  [! `'|j`;=;;;jmkkk;!'!''                                  ,pmkkm]kkHH[*%kkkkjjjj{;;j%m%kh   
+mmkkkk  [!,,,,,,y]wppgmmmjjHmkr!''  '                          .';jjj{%jkkk%kkmb"%jkkkj;jjjkk{}[    
+Hmkkkkw,;,,r````,,:=:r=*'';;,'..=                             : ;!!j;jjkjjkkkkkjkH,*jkkj;;!|||![    
+bmmkkkkkk;!L '!'`     rrrj![:rr::                            ,`;||!jjjkkkk;;jjkkkjkH,"j;;!!|,,`j    
+Hbmmkkkkk;!||''       ''` ' .,,,         ,hmH@p.      ,.,,.  '.***k!j;jk!;jkjkjk;jjj;mp'jjjkkkim    
+%%kkkkjj||||`.         ~: .;;;r;mmm;,;,:  .,~mHH!|rj*       ; '`||||j{*jjjkjkk!!jj;jkk;jb`j|*"|     
+;kkk;;;;!!"`                   opHpw"**"``              ,,,,` ;|'||!!!!kwjkkki!;;;jjjjkjkmh'|r      
+kkkkk;;;;;,.             ..  ^``                      ,,||'` ;||||!!!jjkkjk/j!!;;;jjjk;jkkkH,       
+kkkkkkkkkkkkkkk;;H*^"`                         .,=pm;;;||'' ;||.;!;;jjj;;;j;hj!!;;jjj;;jjkkk|.      
+mmmmmmmmmmmkkkkk;H~                     ,,p@Hmkkkj!;;;;!''  ``,;!;!jjjj;;;;!;)ji!jj{;;jjjkk!||      
+HbmmHmmmmmmmmmmkkmppp;..         ,,pp@Hmmmmmmmmkmkkkk"' `  ,;!!;k{jjj;;;;!!;;;kjkj;;;jjjkkr|`|      
+HHHHHHHHHHHHHHmmmmmmmmbHH@@@p@@@HHmpHHHHmHHHHHk%H%!|''   :}|||||||;;;;j!!;jj;j;jjji!;j;;;;`  ``     
+@@@HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH%@H%kk%M"      jkkg;;jkkj;;!||;;;;;{!;;;jj;j;;;;r  
+
+                                                                                         Plot twist, Martina Pizzigoni, 2022-2023
+```
+
+
+
 ## How does it work? 
 
 ### Set up of the variables 
@@ -259,7 +300,3 @@ def keyPressed():
 
 This project is licensed under the GNU GENERAL PUBLIC license. Please see the
 [LICENSE](LICENSE) file for more details.
-
-## Exhibit
-
-The work was first presented in [Sankt Interface 2022](http://interface.ufg.ac.at/blog/sankt-interface-2/) event in Linz, Austria.
